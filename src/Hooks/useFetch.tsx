@@ -27,11 +27,9 @@ function useFetch<T>(url: RequestInfo | URL, options?: RequestInit){
         const json = (await response.json()) as T;
         
        !signal.aborted ? setData(json) : null
-        
-        console.log(data);
      
       } catch (error) {
-        if(error instanceof Error) setError(error.message)
+        if(!signal.aborted && error instanceof Error) setError(error.message)
       } finally{
         !signal.aborted ? setLoading(false) : setLoading(true)
       }

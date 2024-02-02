@@ -5,7 +5,7 @@ const Resumo = () => {
   const {data} = useData()
   return (
     <div>
-      <h1>Resumo</h1>
+      Resumo
     </div>
   )
 }
