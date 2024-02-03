@@ -11,7 +11,7 @@ type IDataContext = {
   setFinal: React.Dispatch<React.SetStateAction<string>>,
 }
 
-type IVenda = {
+export type IVenda = {
   id: string
   nome: string
   preco: number
@@ -38,7 +38,6 @@ function getAnyDaysAgo(n: number){
   const yyyy = date.getFullYear()
 
   return `${yyyy}-${mm}-${dd}`;
-  
 }
 
 

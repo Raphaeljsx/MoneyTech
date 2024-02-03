@@ -52,23 +52,27 @@ ul{
   margin-bottom: var(--gap);
 }
 
+.mt{
+  margin-top:  var(--gap);
+}
+
 .bg-1{
   background: var(--color-1);
 }
 
-.bg-1{
+.bg-2{
   background: var(--color-2);
 }
 
-.bg-1{
+.bg-3{
   background: var(--color-3);
 }
 
-.bg-1{
+.bg-4{
   background: var(--color-4);
 }
 
-.bg-1{
+.bg-5{
   background: var(--color-5);
 }
 
@@ -76,8 +80,47 @@ ul{
   display: grid;
   padding: var(--gap);
   gap:  var(--gap);
+  grid-template-columns: 240px auto;
 }
 
+/* sidenav */
+
+.sidenav li{
+
+  display: flex;
+  align-items: center;
+  gap: var(--gap-s);
+}
+
+.sidenav li span{
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--gap);
+}
+
+.sidenav li  a{
+  text-decoration: none;
+  color: var(--color-1);
+  font-size: 1.25rem;
+  flex: 1;
+  padding: var(--gap-s) 0;
+}
+
+.sidenav li:hover a{
+  background: var(--color-3);
+}
+
+/* daterange */
+.daterange{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+/* resumo */
 .resumo{
   font-size: 1.5rem;
   font-weight: 600;
@@ -87,4 +130,28 @@ ul{
   font-size: 1.5rem;
   margin-bottom: var(--gap);
   color: var(--color-1);
+}
+
+
+a{
+  font-family: monospace;
+}
+
+
+/* venda  */
+
+.venda{
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+.venda div:last-child{
+  justify-self: flex-end;
+}
+
+.venda a{
+  text-decoration: none;
+  color: inherit;
 }

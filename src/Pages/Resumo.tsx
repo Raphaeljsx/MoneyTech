@@ -18,10 +18,7 @@ const Resumo = () => {
       <div className='box'>
         <div>
           <h2>Recebido</h2>
-          <span>
-            
-            {data.filter((i)=> i.status === 'pago').reduce((acc, item) => acc + item.preco, 0).toLocaleString('pt-BR', {style:"currency", currency: 'BRL'})}
-          </span>
+          <span>{data.filter((i)=> i.status === 'pago').reduce((acc, item) => acc + item.preco, 0).toLocaleString('pt-BR', {style:"currency", currency: 'BRL'})}</span>
         </div>
       </div>
       <div className='box'>
