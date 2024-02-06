@@ -5,6 +5,7 @@ import { TbArrowsTransferUp } from "react-icons/tb";
 import { CiSettings } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoMdLogOut } from "react-icons/io";
+import { NavLink } from 'react-router-dom';
 
 
 const SideNav = () => {
@@ -14,13 +15,13 @@ const SideNav = () => {
       <ul >
         <li>
             <span><IoHomeOutline fill='currentColor'/></span>
-          <a href="">
-            Resumo</a>
+          <NavLink to='/'>
+            Resumo</NavLink>
         </li>
         <li>
             <span><MdOutlineSell fill='currentColor' /></span>
-          <a href="">
-            Vendas</a>
+          <NavLink to='/vendas'>
+            Vendas</NavLink>
         </li>
         <li>
             <span><TbArrowsTransferUp fill='currentColor'/></span>
